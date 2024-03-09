@@ -1,0 +1,39 @@
+LISTADO GENERAL DE ELEMENTOS
+1.En el archivo index.php, haciendo uso de las etiquetas vistas en clase elaborar lo siguiente:
+	- En un encabezado, poner el nombre del proyecto.
+	- Poner los objetivos y una breve descripción de su proyecto.
+	- Datos de la materia.
+	- Deberán colocar una tabla con la foto y el nombre de cada integrante del equipo.
+		- las fotos se guardan en la carpeta img, para usarla como solo ponemos en el atributo src de la imagen "img\imagen1.abc" donde abc es la extensión(jpeg,png,gif) de la imagen.
+	- Un enlace al archvio PDF del proyecto original, lo que entregaron el 2 parcial.
+		- El PDF debera estar en la carpeta files, y se sigue la misma logica de la imagen par aser usada en un <a> "files\archivo.abc".
+
+2. Deberán crear un documento HTML para cada tabla de su DB, la base sera "alumnos_lst.php"
+	- Crear una copia del archivo base, y nombrarlo como tabla_lst.php
+	- En la linea 18, deberán establecer la consulta SQL correcta.
+	- En la linea 24, deberán cambiar el nombre de la variable($alumnos) por el de su tabla.	
+	- En la linea 66 y 68, deberán cambiar el nombre de la variable($alumnos) por el usado en el punto anterior.
+	- Deberán armar la tabla HTML acorde a la tabla de su DB, linea 72 a 76 pueden agregar o quietar columnas.
+	
+	Nota 1: Recuerden actualizar los enlaces en el header.php ubicado en la carpeta templates\, a partir de la linea 34.
+	
+	Nota 2: COnfigurar la base de datos en el archivo config.php
+
+REPORTES DE BASE DE DATOS
+3.En este punto deberán crear una consulta que refleje información relevante del proyecto, donde se mezclen consultas a varias tablas y filtros.
+	- Deberán crear 2 consultas, filtradas por un campo cada una, considera al menos 1 campo de fecha.
+	- Esa consulta la deberán poner en la linea 20 para f1, y 25 para f2.
+	- En la linea 32, ira la misma consulta pero sin filtros.
+	- En cada filtro cambiar el valor del atributo placeholder según corresponda. Linea 74 y 86
+	- Cambiar el titulo del reporte en la linea 97.
+	
+		
+	
+
+Tools
+Este código dentro de PHP sirve para debuguear
+echo '<pre>';
+  var_dump(variable);
+echo '</pre>';
+
+El . se usa para unir dos cadenas "texto 1" . "texto 2" ---->"texto 1 texto 2"
