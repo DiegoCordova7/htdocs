@@ -21,19 +21,14 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<br><br>";
     //numeros
-    $acumulador = 1;
     $n = ($_POST['n']);
     if ($n >= 1) {
-        echo $n . "!= ";
-        while ($n >= 1) {
+        echo $n . "!=";
+        function permutaciones($n)
+        {
+            $n = $n * ($n - 1);
             echo $n;
-            if ($n >= 2) {
-                echo "*";
-            }
-            $acumulador = $acumulador * $n;
-            $n = $n - 1;
         }
-        echo "= " . $acumulador;
     } elseif ($n == 0) {
         echo '0!=1';
     } else {
