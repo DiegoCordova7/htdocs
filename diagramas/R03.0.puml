@@ -1,0 +1,27 @@
+@startuml R03.0
+
+left to right direction
+
+actor Admin as "Admin"
+actor "Gestor de Inventario" as Gestor
+actor "Técnico de Reparaciones" as Tecnico
+actor Gerente as "Gerente"
+actor "Ensamblador de PC's" as Ensamblador
+
+rectangle "Gestión de Tareas" {
+    Admin --> (Buscar Productos)
+    Gestor --> (Buscar Productos)
+    Tecnico --> (Buscar Productos)
+    Admin --> (Agregar Productos)
+    Gestor --> (Agregar Productos)
+    Gestor --> (Leer Productos)
+    Gestor --> (Actualizar Registros)
+    Admin --> (Actualizar Registros)
+    Gestor --> (Eliminar Registro)
+    Admin --> (Eliminar Registro)
+}
+
+Gerente --> (Agregar Productos)
+Ensamblador --> (Agregar Productos)
+
+@enduml

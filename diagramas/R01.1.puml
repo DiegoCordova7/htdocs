@@ -1,0 +1,86 @@
+@startuml R01.0
+
+left to right direction
+
+actor Admin as "Admin"
+actor Gerente as "Gerente"
+actor "Ensamblador de PC's" as Ensamblador
+actor "Asesor de Ventas" as Asesor
+actor Empleado as "Empleado"
+actor "Gestor del inventario" as Gestor
+actor "Técnico de Reparaciones" as Tecnico
+
+rectangle "Gestión de Tareas Por Rol" {
+    left to right direction
+    
+    Admin --> (Admin_Acciones) : Realiza
+    Gerente --> (Gerente_Acciones) : Realiza
+    Ensamblador --> (Ensamblador_Acciones) : Realiza
+    Asesor --> (Asesor_Acciones) : Realiza
+    Empleado --> (Empleado_Acciones) : Realiza
+    
+    Gestor --> (Gestor_Acciones) : Realiza
+    Tecnico --> (Tecnico_Acciones) : Realiza
+    
+    (Admin_Acciones) --> (Buscar productos)
+    (Admin_Acciones) --> (Actualizar productos)
+    (Admin_Acciones) --> (Eliminar productos)
+    (Admin_Acciones) --> (Modificar permisos de usuarios)
+    (Admin_Acciones) --> (Añadir productos)
+    (Admin_Acciones) --> (Hacer documentación)
+    (Admin_Acciones) --> (Solicitar el equipo)
+    (Admin_Acciones) --> (Registrar ventas)
+    (Admin_Acciones) --> (Ver los productos)
+    (Admin_Acciones) --> (Realizar ventas)
+    (Admin_Acciones) --> (Procesar reclamos)
+    (Admin_Acciones) --> (Agregar categorías)
+    (Admin_Acciones) --> (Ver equipos)
+    
+    (Gerente_Acciones) --> (Modificar permisos de usuarios)
+    (Gerente_Acciones) --> (Añadir productos)
+    (Gerente_Acciones) --> (Hacer documentación)
+    (Gerente_Acciones) --> (Solicitar el equipo)
+    (Gerente_Acciones) --> (Registrar ventas)
+    (Gerente_Acciones) --> (Ver los productos)
+    (Gerente_Acciones) --> (Realizar ventas)
+    (Gerente_Acciones) --> (Procesar reclamos)
+    (Gerente_Acciones) --> (Agregar categorías)
+    (Gerente_Acciones) --> (Ver equipos)
+    
+    (Ensamblador_Acciones) --> (Añadir productos)
+    (Ensamblador_Acciones) --> (Hacer documentación)
+    (Ensamblador_Acciones) --> (Solicitar el equipo)
+    (Ensamblador_Acciones) --> (Registrar ventas)
+    (Ensamblador_Acciones) --> (Ver los productos)
+    (Ensamblador_Acciones) --> (Realizar ventas)
+    (Ensamblador_Acciones) --> (Procesar reclamos)
+    (Ensamblador_Acciones) --> (Agregar categorías)
+    (Ensamblador_Acciones) --> (Ver equipos)
+    
+    (Asesor_Acciones) --> (Solicitar el equipo)
+    (Asesor_Acciones) --> (Registrar ventas)
+    (Asesor_Acciones) --> (Ver los productos)
+    (Asesor_Acciones) --> (Realizar ventas)
+    (Asesor_Acciones) --> (Procesar reclamos)
+    (Asesor_Acciones) --> (Agregar categorías)
+    (Asesor_Acciones) --> (Ver equipos)
+    
+    (Empleado_Acciones) --> (Ver los productos)
+    (Empleado_Acciones) --> (Realizar ventas)
+    (Empleado_Acciones) --> (Procesar reclamos)
+    (Empleado_Acciones) --> (Agregar categorías)
+    (Empleado_Acciones) --> (Ver equipos)
+    
+    (Gestor_Acciones) --> (Ver los productos)
+    (Gestor_Acciones) --> (Buscar productos)
+    (Gestor_Acciones) --> (Añadir productos)
+    (Gestor_Acciones) --> (Actualizar productos)
+    (Gestor_Acciones) --> (Eliminar productos)
+    (Gestor_Acciones) --> (Agregar categorías)
+    (Gestor_Acciones) --> (Ver equipos)
+    
+    (Tecnico_Acciones) --> (Ver equipos)
+    (Tecnico_Acciones) --> (Buscar productos)
+}
+
+@enduml

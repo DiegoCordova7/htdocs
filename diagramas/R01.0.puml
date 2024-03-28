@@ -1,0 +1,12 @@
+@startuml R01.0
+
+left to right direction
+
+actor Usuario as "Usuario"
+rectangle "Sistema de Login" {
+    Usuario --> (Ingresar Credenciales)
+    (Ingresar Credenciales) --> (Verificar Credenciales)
+    (Verificar Credenciales) --> (Permitir Acceso)
+}
+
+@enduml
