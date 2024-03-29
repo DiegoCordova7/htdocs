@@ -18,7 +18,6 @@ rectangle "Gestión de Tareas Por Rol" {
     Ensamblador --> (Ensamblador_Acciones) : Realiza
     Asesor --> (Asesor_Acciones) : Realiza
     Empleado --> (Empleado_Acciones) : Realiza
-    
     Gestor --> (Gestor_Acciones) : Realiza
     Tecnico --> (Tecnico_Acciones) : Realiza
     
@@ -31,45 +30,25 @@ rectangle "Gestión de Tareas Por Rol" {
     (Admin_Acciones) --> (Solicitar el equipo)
     (Admin_Acciones) --> (Registrar ventas)
     (Admin_Acciones) --> (Ver los productos)
-    (Admin_Acciones) --> (Realizar ventas)
     (Admin_Acciones) --> (Procesar reclamos)
     (Admin_Acciones) --> (Agregar categorías)
-    (Admin_Acciones) --> (Ver equipos)
     
     (Gerente_Acciones) --> (Modificar permisos de usuarios)
     (Gerente_Acciones) --> (Añadir productos)
     (Gerente_Acciones) --> (Hacer documentación)
-    (Gerente_Acciones) --> (Solicitar el equipo)
-    (Gerente_Acciones) --> (Registrar ventas)
     (Gerente_Acciones) --> (Ver los productos)
-    (Gerente_Acciones) --> (Realizar ventas)
-    (Gerente_Acciones) --> (Procesar reclamos)
-    (Gerente_Acciones) --> (Agregar categorías)
-    (Gerente_Acciones) --> (Ver equipos)
     
     (Ensamblador_Acciones) --> (Añadir productos)
     (Ensamblador_Acciones) --> (Hacer documentación)
-    (Ensamblador_Acciones) --> (Solicitar el equipo)
-    (Ensamblador_Acciones) --> (Registrar ventas)
     (Ensamblador_Acciones) --> (Ver los productos)
-    (Ensamblador_Acciones) --> (Realizar ventas)
-    (Ensamblador_Acciones) --> (Procesar reclamos)
-    (Ensamblador_Acciones) --> (Agregar categorías)
-    (Ensamblador_Acciones) --> (Ver equipos)
     
     (Asesor_Acciones) --> (Solicitar el equipo)
     (Asesor_Acciones) --> (Registrar ventas)
     (Asesor_Acciones) --> (Ver los productos)
-    (Asesor_Acciones) --> (Realizar ventas)
-    (Asesor_Acciones) --> (Procesar reclamos)
-    (Asesor_Acciones) --> (Agregar categorías)
-    (Asesor_Acciones) --> (Ver equipos)
     
     (Empleado_Acciones) --> (Ver los productos)
     (Empleado_Acciones) --> (Realizar ventas)
     (Empleado_Acciones) --> (Procesar reclamos)
-    (Empleado_Acciones) --> (Agregar categorías)
-    (Empleado_Acciones) --> (Ver equipos)
     
     (Gestor_Acciones) --> (Ver los productos)
     (Gestor_Acciones) --> (Buscar productos)
@@ -77,10 +56,10 @@ rectangle "Gestión de Tareas Por Rol" {
     (Gestor_Acciones) --> (Actualizar productos)
     (Gestor_Acciones) --> (Eliminar productos)
     (Gestor_Acciones) --> (Agregar categorías)
-    (Gestor_Acciones) --> (Ver equipos)
     
     (Tecnico_Acciones) --> (Ver equipos)
     (Tecnico_Acciones) --> (Buscar productos)
+    (Tecnico_Acciones) --> (Ver los productos)
 }
 
 @enduml

@@ -14,14 +14,13 @@ rectangle "Gestión de Tareas" {
     Tecnico --> (Buscar Productos)
     Admin --> (Agregar Productos)
     Gestor --> (Agregar Productos)
+    Gerente --> (Agregar Productos)
+    Ensamblador --> (Agregar Productos)
     Gestor --> (Leer Productos)
     Gestor --> (Actualizar Registros)
     Admin --> (Actualizar Registros)
     Gestor --> (Eliminar Registro)
     Admin --> (Eliminar Registro)
 }
-
-Gerente --> (Agregar Productos)
-Ensamblador --> (Agregar Productos)
 
 @enduml

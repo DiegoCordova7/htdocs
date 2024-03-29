@@ -1,0 +1,15 @@
+@startuml R03.1
+
+left to right direction
+
+actor Admin as "Admin"
+
+Admin --> (Ver Componentes por Categoría)
+
+rectangle "Ver Componentes por Categoría" {
+    (Ver Componentes) --> (Mostrar Categorías)
+    (Mostrar Categorías) --> (Verificar Componentes Asociados)
+    (Verificar Componentes Asociados) --> (Mostrar Componentes)
+}
+
+@enduml
